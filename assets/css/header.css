@@ -1,0 +1,44 @@
+#main-header {
+    background: #212121;
+    color: #e1e1e1;
+}
+
+#main-header h1 {
+    text-align: center;
+}
+
+#main-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 70vw;
+    align-items: center;
+}
+
+#main-navigation ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #eaeaea;
+    padding: 20px;
+}
+
+#main-navigation ul li a:hover {
+    background: #616161;
+    color: #efefef;
+}
+
+#main-navigation ul li #subway-icon {
+    padding: 0;
+}
+
+#main-navigation ul li #subway-icon:hover {
+    background: #212121;
+}
+
+.left-align {
+    margin-right: auto;
+}
+
+#main-navigation ul:first-child {
+    margin-left: 12vw;
+}

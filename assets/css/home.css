@@ -1,0 +1,56 @@
+#header-background-image {
+    height: 600px;
+    background-image: url('../img/main-section-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 68%;
+    text-align: center;
+    color: #353535;
+}
+
+#header-background-image h1{
+    padding-top: 125px;
+    font-size: 2.5rem;
+}
+
+#header-background-image p {
+    margin-top: 50px;
+}
+
+#header-background-image .btn {
+    margin-top: 50px;
+}
+
+#content-section {
+    display: flex;
+    text-align: center;
+    height: 25vh;
+}
+
+#cta-api-info {
+    padding: 2rem;
+}
+
+#cta-api-info h1, #cta-api-info p {
+    line-height: 1.4rem;
+    padding: .8rem;
+}
+
+#current-schools {
+    padding: 2rem;
+    flex-basis: 50vw;
+}
+
+#current-schools h1, #current-schools p {
+    line-height: 1.4rem;
+    padding: .8rem;
+}
+
+#cta-api-info { 
+    background: #333 url('../img/chicago-api-info.jpg') center center/cover;
+    flex-basis: 50vw;
+}
+
+#div-bar {
+    height: 2vh;
+}
