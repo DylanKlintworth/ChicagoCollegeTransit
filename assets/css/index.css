@@ -45,9 +45,13 @@ table {
 
 /* Reset Finished */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', 'Quicksand', sans-serif;
-    background: #919191;
+    background: #313131;
     color: #e1e1e1;
 }
 
@@ -55,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-.current-page {
+.current-page a{
     background: #616161;
 }
 
@@ -80,4 +84,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .dark-background {
     background: #333;
+}
+
+.dark-font {
+    color: #333;
 }

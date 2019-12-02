@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/92bc9a6fa4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/contact-us.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto&display=swap" rel="stylesheet">
 </head>
@@ -16,15 +16,43 @@
     <header id="main-header">
         <nav id="main-navigation">
             <ul>
-                <li class="left-align"><a href="index.html" id="subway-icon"><i class="fas fa-subway fa-2x"></i></a></li>
-                <li><a href="index.html"><i class="fas fa-home icon-right-padding"></i>Home</a></li>
-                <li><a href="contact-us.html" class="current-page"><i class="fas fa-envelope-square icon-right-padding"></i>Contact us!</a></li>
+                <li class="left-align"><a href="index.html" id="subway-icon"><i class="fas fa-subway fa-2x"></i>EduStation</a></li>
+                <li><a href="index.html" class="current-page"><i class="fas fa-home icon-right-padding"></i>Home</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope-square icon-right-padding"></i>Contact us!</a></li>
                 <li><a href="sign-in.html"><i class="fas fa-sign-in-alt icon-right-padding"></i>Sign In</a></li>
                 <li><a href="sign-up.html"><i class="fas fa-user-plus icon-right-padding"></i>Sign Up</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="contact-us-main-section">
+        <section id="form-section">
+            <form action="contact-us" id="contact-us-form">
+                <h2 id="form-header">Contact Us!</h2>
+                <div id="first-name-section">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name">
+                </div>
+                <div id="last-name-section">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name">
+                </div>
+                <div id="email-section">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email">
+                </div>
+                <div id="subject-section">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject">
+                </div>
+                <div id="message-section">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div id="submit-section">
+                    <input type="submit" id="submit-button">
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <section id="main-footer">

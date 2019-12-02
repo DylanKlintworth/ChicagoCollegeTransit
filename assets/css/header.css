@@ -19,7 +19,7 @@
     display: inline-block;
     text-decoration: none;
     color: #eaeaea;
-    padding: 20px;
+    padding: 2.5vh;
 }
 
 #main-navigation ul li a:hover {
@@ -29,6 +29,8 @@
 
 #main-navigation ul li #subway-icon {
     padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 #main-navigation ul li #subway-icon:hover {
@@ -41,4 +43,8 @@
 
 #main-navigation ul:first-child {
     margin-left: 12vw;
+}
+
+#main-navigation ul li #subway-icon i {
+    margin-right: 1vw;
 }

@@ -1,0 +1,54 @@
+#contact-us-main-section {
+    background-image: url('../img/contact-us-background.jpg');
+    background-position-x: center;
+    background-position-y: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#form-section {
+    margin: auto;
+    text-align: center;
+}
+
+#contact-us-form {
+    min-width: 38vw;
+    display: inline-block;
+    background: #c1c1c1;
+    border-radius: 5px;
+    box-shadow: inset;
+    margin: 2rem auto;
+    color: #222;
+}
+
+#form-header {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#contact-us-form div {
+    margin-bottom: 10px;
+}
+
+#contact-us-form label {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+
+#contact-us-form input {
+    border-style: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 80%;
+}
+
+#contact-us-form #message {
+    width: 80%;
+    border-radius: 5px;
+}
+
+#submit-section #submit-button {
+    width: 33%;
+}
+
