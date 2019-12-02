@@ -1,4 +1,6 @@
 #main-footer {
     background: #212121;
-    height: 100px;
+    height: 10vh;
+    text-align: center;
+    padding: 20px;
 }

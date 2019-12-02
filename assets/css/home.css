@@ -38,7 +38,7 @@
 
 #current-schools {
     padding: 2rem;
-    flex-basis: 50vw;
+    flex-basis: 40vw;
 }
 
 #current-schools h1, #current-schools p {
@@ -48,7 +48,7 @@
 
 #cta-api-info { 
     background: #333 url('../img/chicago-api-info.jpg') center center/cover;
-    flex-basis: 50vw;
+    flex-basis: 60vw;
 }
 
 #div-bar {
