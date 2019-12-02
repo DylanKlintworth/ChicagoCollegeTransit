@@ -11,7 +11,7 @@
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    max-width: 70vw;
+    max-width: 90%;
     align-items: center;
 }
 
@@ -19,7 +19,7 @@
     display: inline-block;
     text-decoration: none;
     color: #eaeaea;
-    padding: 2.5vh;
+    padding: 20px;
 }
 
 #main-navigation ul li a:hover {
@@ -42,7 +42,7 @@
 }
 
 #main-navigation ul:first-child {
-    margin-left: 12vw;
+    margin-left: 10%;
 }
 
 #main-navigation ul li #subway-icon i {
