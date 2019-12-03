@@ -1,13 +1,31 @@
 $(document).ready(function(){
-    const url = "http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=1daa1ab0a15c4605a9e5db8f21ec8adc&mapid=41300&max=1&outputType=JSON";
-    $("#submit-btn").click(function(){
+    $("#submit-btn").click(function(){ 
+        let url = "http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=1daa1ab0a15c4605a9e5db8f21ec8adc&max=4&outputType=JSON&mapid=";
+        let stationNum = getStation();
+        console.log(stationNum)
+        url += stationNum;
         let add = $("#time-section");
         console.log("click");
         fetch(url)
         .then((resp) => resp.json())
         .then((data) => {
             let holder = data;
-            console.log(holder);
+            let arrivals = holder.ctatt.eta;
+            for (let i = 0; i < arrivals.length; i++) {
+                let arrival = arrivals[i];
+                let arrivalStation = arrival.staNm;
+                let arrivalDescription = arrival.destNm;
+                let arrivalGeneration = new Date(arrival.prdt);
+                let arrivalArrival = new Date(arrival.arrT);
+                let arrivalTime = Math.abs(arrivalArrival - arrivalGeneration) / 60000;
+                let display = $("<div>");
+                display.addClass("times");
+                display.append(`<h2>${arrivalStation} Station<h2>`);
+                display.append(`<p>Destination: ${arrivalDescription}</p>`);
+                display.append(`<p>${arrivalTime} minute(s) until arrival.</p>`);
+                add.append(display);
+            }
+            /*
             let arrival1 = holder.ctatt.eta[0];
             let arrival1Station = arrival1.staNm;
             let arrival1Description = arrival1.destNm;
@@ -16,15 +34,25 @@ $(document).ready(function(){
             console.log(arrival1Station)
             console.log(arrival1Description);
             let arrivalTime = (arrival1ArrivalTime.getMinutes() - arrival1PredictionTime.getMinutes());
-            let display = $("<div>");
-            display.addClass("times");
-            display.append(`<h2>${arrival1Station} Station<h2>`);
-            display.append(`<p>Destination: ${arrival1Description}</p>`);
-            display.append(`<p>${arrivalTime} Minute until arrival </p>`);
-            add.append(display);
+            */
         })
         .catch((error) => {
             console.log(error);
         });
     });
 });
+
+function getStation() {
+    let station = $("#station-selection").val();
+    switch(station) {
+        case "loyola-redline":
+            return "41300";
+            break;
+        case "depaul-redline":
+            return "41220";
+            break;
+        default:
+            return "41300";
+            break;
+    }
+}
