@@ -1,6 +1,5 @@
 #transit-section {
     background: url('../img/transit-times.jpg') no-repeat center 80%/cover;
-    height: 900px;
 }
 
  #transit-section #time-section {
@@ -15,7 +14,7 @@
     border-radius: 5px;
     text-align: center;
     color: #222;
-    padding: 2rem;
+    padding: 3rem;
     margin-bottom: 20px;
 }
 
@@ -43,4 +42,17 @@
     color: #eee;
     background: #333;
     border-radius: 5px;
+}
+
+.times {
+    background: #A00;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #111;
+}
+
+.times > h2, p {
+    margin-bottom: 1rem;
 }
