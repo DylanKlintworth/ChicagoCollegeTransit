@@ -1,5 +1,5 @@
 #header-background-image {
-    height: 600px;
+    height: 700px;
     background-image: url('../img/main-section-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +24,6 @@
 #content-section {
     display: flex;
     text-align: center;
-    height: 200px;
 }
 
 #cta-api-info {
@@ -39,14 +38,29 @@
 #current-schools {
     padding: 2rem;
     flex-basis: 40%;
+    background: #333;
+    color: #eee;
 }
 
-#current-schools h1, #current-schools p {
-    line-height: 1.4rem;
-    padding: .8rem;
+#content-section #current-schools h2 {
+    margin: 3rem 0;
+    font-size: 1.5rem;
 }
 
-#cta-api-info { 
-    background: #333 url('../img/chicago-api-info.jpg') center center/cover;
+#content-section #current-schools #current-schools-list li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    background: #eee;
+    min-width: auto;
+}
+
+#content-section #current-schools #current-schools-list:last-child {
+    margin-bottom: 10px;
+}
+
+#cta-api-info {
     flex-basis: 60%;
+    background: #333 url('../img/chicago-api-info.jpg') center center/cover
 }

@@ -1,0 +1,46 @@
+#transit-section {
+    background: url('../img/transit-times.jpg') no-repeat center 80%/cover;
+    height: 900px;
+}
+
+ #transit-section #time-section {
+    width: 600px;
+    margin: auto;
+    padding: 8rem 10rem;
+}
+
+#transit-section #time-section #transit-time-block {
+    background: #c1c1c1;
+    border: 1px solid #111;
+    border-radius: 5px;
+    text-align: center;
+    color: #222;
+    padding: 2rem;
+    margin-bottom: 20px;
+}
+
+#transit-section #time-section #transit-time-block h2{
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+#transit-section #time-section #transit-time-block #station-selection-dropdown label{
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#transit-section #time-section #transit-time-block #station-selection-dropdown select{
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 90%;
+    text-align: center;
+}
+
+#transit-section #time-section #transit-time-block #station-selection-submit #submit-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #eee;
+    background: #333;
+    border-radius: 5px;
+}

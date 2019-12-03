@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chicago College Transit</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/92bc9a6fa4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/header.css">
@@ -31,9 +32,12 @@
             <a href="about.html" class="btn">Find Out More</a>
         </div>
         <section id="content-section">
-            <section id="current-schools" class="dark-background">
+            <section id="current-schools">
+                <i class="far fa-clock fa-3x"></i>
                 <h2>School Transit Locations</h2>
-                <p>Currently data for the Loyola Red-line CTA stop is being tested.</p>
+                <ul id="current-schools-list">
+                    <li><a href="transit-times.html">Loyola Red-Line</a></li>
+                </ul>
             </section>
             <section id="cta-api-info" class="dark-background">
                 
@@ -42,7 +46,7 @@
     </main>
     <footer>
         <section id="main-footer">
-            <p>Chicago College Transit &copy;</p>
+            <p>Copyright &copy; 2019 EduStation</p>
         </section>
     </footer>
 </body>

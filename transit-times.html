@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/92bc9a6fa4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/contact-us.css">
+    <link rel="stylesheet" href="assets/css/transit-times.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto&display=swap" rel="stylesheet">
 </head>
@@ -25,34 +25,22 @@
             </ul>
         </nav>
     </header>
-    <main id="contact-us-main-section">
-        <section id="form-section">
-            <form action="contact-us" id="contact-us-form">
-                <h2 id="form-header">Contact Us!</h2>
-                <div id="first-name-section">
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name">
+    <main>
+        <section id="transit-section">
+            <section id="time-section">
+                <div id="transit-time-block">
+                    <h2>Transit Times</h2>
+                    <div id="station-selection-dropdown">
+                        <label for="station-selection">Select a Station</label>
+                        <select name="station-selection" id="station-selection">
+                            <option value="loyola-redline">Loyola Redline</option>
+                        </select>
+                    </div>
+                    <div id="station-selection-submit">
+                        <input type="submit" id="submit-btn" value="Select">
+                    </div>
                 </div>
-                <div id="last-name-section">
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name">
-                </div>
-                <div id="email-section">
-                    <label for="email">Email:</label>
-                    <input type="text" id="email">
-                </div>
-                <div id="subject-section">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject">
-                </div>
-                <div id="message-section">
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <div id="submit-section">
-                    <input type="submit" id="submit-button">
-                </div>
-            </form>
+            </section>
         </section>
     </main>
     <footer>
@@ -60,5 +48,6 @@
             <p>Copyright &copy; 2019 EduStation</p>
         </section>
     </footer>
+    <script src="./assets/js/transit-times.js"></script>
 </body>
 </html>
