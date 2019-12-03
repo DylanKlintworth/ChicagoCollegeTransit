@@ -12,13 +12,14 @@
 }
 
 #contact-us-form {
-    min-width: 38vw;
+    width: 400px;
     display: inline-block;
     background: #c1c1c1;
     border-radius: 5px;
     box-shadow: inset;
-    margin: 2rem auto;
+    margin: 150px auto;
     color: #222;
+    border: 1px solid #111;
 }
 
 #form-header {
@@ -37,10 +38,11 @@
 }
 
 #contact-us-form input {
-    border-style: none;
+    border: 1px #888 solid;
     border-radius: 5px;
     height: 30px;
     width: 80%;
+
 }
 
 #contact-us-form #message {
