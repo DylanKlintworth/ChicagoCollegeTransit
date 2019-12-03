@@ -1,5 +1,5 @@
 #transit-section {
-    background: url('../img/transit-times.jpg') no-repeat center 80%/cover;
+    background: url('../img/transit-times.jpg') repeat-y center 80%/contain;
 }
 
  #transit-section #time-section {
@@ -51,6 +51,23 @@
     border-radius: 5px;
     padding: 20px;
     border: 1px solid #111;
+}
+
+.loyola-colors {
+    background: #922247;
+    color: #febd18;
+}
+
+.depaul-colors {
+    background: #005EB8;
+    color: #eee;
+    border: 2px solid #e4002b;
+}
+
+.uic-colors {
+    background: #D50032;
+    color: #eee;
+    border: 2px solid #00b5e2;
 }
 
 .times > h2, p {

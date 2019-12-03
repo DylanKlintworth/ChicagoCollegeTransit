@@ -5,6 +5,7 @@ $(document).ready(function(){
         console.log(stationNum)
         url += stationNum;
         let add = $("#time-section");
+        let stationColors = getStationColors(stationNum);
         console.log("click");
         fetch(url)
         .then((resp) => resp.json())
@@ -20,6 +21,7 @@ $(document).ready(function(){
                 let arrivalTime = Math.abs(arrivalArrival - arrivalGeneration) / 60000;
                 let display = $("<div>");
                 display.addClass("times");
+                display.addClass(stationColors);
                 display.append(`<h2>${arrivalStation} Station<h2>`);
                 display.append(`<p>Destination: ${arrivalDescription}</p>`);
                 display.append(`<p>${arrivalTime} minute(s) until arrival.</p>`);
@@ -45,14 +47,34 @@ $(document).ready(function(){
 function getStation() {
     let station = $("#station-selection").val();
     switch(station) {
-        case "loyola-redline":
+        case "loyola":
             return "41300";
             break;
-        case "depaul-redline":
+        case "depaul":
             return "41220";
+            break;
+        case "uic":
+            return "40350";
             break;
         default:
             return "41300";
             break;
+    }
+}
+
+function getStationColors(stationNum){
+    switch (stationNum){
+        case "41300":
+            return "loyola-colors"
+            break;
+        case "41220":
+            return "depaul-colors";
+            break;
+        case "40350":
+            return "uic-colors";
+            break;
+        default:
+            return "times";
+            break; 
     }
 }
