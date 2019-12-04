@@ -12,7 +12,7 @@
 }
 
 #contact-us-form {
-    width: 400px;
+    width: 33%;
     display: inline-block;
     background: #c1c1c1;
     border-radius: 5px;
@@ -54,3 +54,8 @@
     width: 33%;
 }
 
+@media screen and (max-width: 769px){
+    #contact-us-form {
+        width: 80%;
+    }
+}
