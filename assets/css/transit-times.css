@@ -1,3 +1,7 @@
+body {
+    background: #212121;
+}
+
 #transit-section {
     background: url('../img/transit-times.jpg') no-repeat center center/cover;
 }
@@ -62,6 +66,7 @@
     border-radius: 5px;
     padding: 20px;
     border: 1px solid #111;
+    box-shadow: 1px 1px black;
 }
 
 .loyola-colors {

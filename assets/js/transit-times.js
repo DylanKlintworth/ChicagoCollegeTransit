@@ -27,23 +27,15 @@ $(document).ready(function(){
                 display.append(`<p>${arrivalTime} minute(s) until arrival.</p>`);
                 add.append(display);
             }
-            /*
-            let arrival1 = holder.ctatt.eta[0];
-            let arrival1Station = arrival1.staNm;
-            let arrival1Description = arrival1.destNm;
-            let arrival1PredictionTime = new Date(arrival1.prdt);
-            let arrival1ArrivalTime = new Date(arrival1.arrT);
-            console.log(arrival1Station)
-            console.log(arrival1Description);
-            let arrivalTime = (arrival1ArrivalTime.getMinutes() - arrival1PredictionTime.getMinutes());
-            */
         })
         .catch((error) => {
             console.log(error);
         });
     });
+    $(document).on('click', '.times', function(){
+        $("div.times").remove();
+    });
 });
-
 function getStation() {
     let station = $("#station-selection").val();
     switch(station) {
