@@ -4,7 +4,7 @@ $(document).ready(function(){
         let stationNum = getStation();
         console.log(stationNum)
         url += stationNum;
-        let add = $("#time-section");
+        let add = $("#time-output");
         let stationColors = getStationColors(stationNum);
         console.log("click");
         fetch(url)

@@ -1,14 +1,15 @@
 #transit-section {
-    background: url('../img/transit-times.jpg') repeat-y center 80%/contain;
+    background: url('../img/transit-times.jpg') repeat-y center 80%/cover;
 }
 
  #transit-section #time-section {
-    width: 600px;
+    width: 60%;
     margin: auto;
-    padding: 8rem 10rem;
+    padding: 10% 15%;
 }
 
 #transit-section #time-section #transit-time-block {
+    min-width: 33%;
     background: #c1c1c1;
     border: 1px solid #111;
     border-radius: 5px;
@@ -44,7 +45,16 @@
     border-radius: 5px;
 }
 
+#time-output {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .times {
+    flex-basis: 45%;
+    margin:  2rem auto;
     background: #A00;
     margin-bottom: 2rem;
     text-align: center;
@@ -72,4 +82,17 @@
 
 .times > h2, p {
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 769px){
+
+    #transit-section #time-section {
+        padding: 0;
+        width: 60%;
+    }
+
+    #time-output {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
