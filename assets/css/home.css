@@ -1,5 +1,5 @@
 #header-background-image {
-    height: 700px;
+    height: 600px;
     background-image: url('../img/main-section-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,6 +54,7 @@
     padding: 10px;
     background: #eee;
     min-width: auto;
+    border-radius: 5px;
 }
 
 #content-section #current-schools #current-schools-list:last-child {

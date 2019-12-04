@@ -1,5 +1,5 @@
 #transit-section {
-    background: url('../img/transit-times.jpg') repeat-y center 80%/cover;
+    background: url('../img/transit-times.jpg') no-repeat center center/cover;
 }
 
  #transit-section #time-section {
@@ -65,7 +65,8 @@
 
 .loyola-colors {
     background: #922247;
-    color: #febd18;
+    color: #eee;
+    border: 2px solid #febd18;
 }
 
 .depaul-colors {
@@ -94,5 +95,10 @@
     #time-output {
         flex-direction: column;
         flex-wrap: nowrap;
+        width: 80%;
+    }
+
+    .times {
+        width: 100%;
     }
 }
