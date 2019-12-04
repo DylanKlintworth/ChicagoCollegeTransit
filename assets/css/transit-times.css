@@ -46,10 +46,11 @@
 }
 
 #time-output {
-    width: 60%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .times {

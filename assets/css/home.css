@@ -6,6 +6,7 @@
     background-position: center 68%;
     text-align: center;
     color: #353535;
+    line-height: 1.4rem;
 }
 
 #header-background-image h1{
@@ -64,4 +65,16 @@
 #cta-api-info {
     flex-basis: 60%;
     background: #333 url('../img/chicago-api-info.jpg') center center/cover
+}
+
+@media screen and (max-width: 769px){
+    #header-background-image h1, #header-background-image p, #header-background-image .btn{
+        padding:  2rem 3rem;
+    }
+
+    #header-background-image h1 {
+        padding-top: 5rem;
+    }
+
+    
 }
