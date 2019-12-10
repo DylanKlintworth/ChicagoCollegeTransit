@@ -1,1 +1,1 @@
-# ChicagoCollegeTransit
+# EduStation
